@@ -8,12 +8,12 @@ public class Main {
         System.out.print("Number: ");
         int number = scanner.nextInt();
 
-        if (number % 5 == 0)
-            System.out.println("Fizz");
+        if (number % 5 == 0 && number % 3 == 0)
+            System.out.println("FizzBuzz");
+        else if (number % 5 == 0)
+            System.out.println("Fizz15");
         else if ( number % 3 == 0)
             System.out.println("Buzz");
-        else if (number % 5 == 0 && number % 3 == 0)
-            System.out.println("FizzBuzz");
         else
             System.out.println(number);
     }
